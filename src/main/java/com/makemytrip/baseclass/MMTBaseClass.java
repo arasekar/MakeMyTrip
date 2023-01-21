@@ -44,7 +44,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class BaseClass {
+public class MMTBaseClass {
 
 	public static Properties prop;
 

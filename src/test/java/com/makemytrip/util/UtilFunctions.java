@@ -28,10 +28,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.makemytrip.baseclass.BaseClass;
+import com.makemytrip.baseclass.MMTBaseClass;
 import com.makemytrip.pom.AllFlightInfoPage;
 
-public class UtilFunctions extends BaseClass {
+public class UtilFunctions extends MMTBaseClass {
 
 	/*
 	 * 1. ExpWaitForWebelement() 2. getExcelData() 3. getCurrentAndReturnDates() 4.

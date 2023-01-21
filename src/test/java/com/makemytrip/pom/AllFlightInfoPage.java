@@ -8,10 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.makemytrip.baseclass.BaseClass;
+import com.makemytrip.baseclass.MMTBaseClass;
 import com.makemytrip.util.UtilFunctions;
 
-public class AllFlightInfoPage extends BaseClass {
+public class AllFlightInfoPage extends MMTBaseClass {
 
 	public static WebDriver driver;
 

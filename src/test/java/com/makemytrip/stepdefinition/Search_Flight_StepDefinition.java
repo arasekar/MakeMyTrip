@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import com.aventstack.extentreports.Status;
-import com.makemytrip.baseclass.BaseClass;
+import com.makemytrip.baseclass.MMTBaseClass;
 import com.makemytrip.pom.HomePage;
 import com.makemytrip.runner.RunWithChrome;
 import cucumber.api.Scenario;
@@ -19,7 +19,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class Search_Flight_StepDefinition extends BaseClass {
+public class Search_Flight_StepDefinition extends MMTBaseClass {
 	public static WebDriver driver = RunWithChrome.driver;
 	public static Properties prop = RunWithChrome.prop;
 	public static HomePage hp = new HomePage(driver);

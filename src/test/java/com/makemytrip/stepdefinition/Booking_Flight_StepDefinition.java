@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import com.aventstack.extentreports.Status;
-import com.makemytrip.baseclass.BaseClass;
+import com.makemytrip.baseclass.MMTBaseClass;
 import com.makemytrip.pom.*;
 import com.makemytrip.runner.RunWithChrome;
 
@@ -21,7 +21,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import junit.framework.Assert;
 
-public class Booking_Flight_StepDefinition extends BaseClass {
+public class Booking_Flight_StepDefinition extends MMTBaseClass {
 
 	public static WebDriver driver = RunWithChrome.driver;
 	public static SelectFlightPage fp = new SelectFlightPage(driver);
@@ -89,7 +89,7 @@ public class Booking_Flight_StepDefinition extends BaseClass {
 		try {
 			pageLoadWait();
 			String wId = driver.getWindowHandle();
-			BaseClass.windowsHandling(wId);
+			MMTBaseClass.windowsHandling(wId);
 			int size = fp.getreviewdFlightName().size();
 			String BookedFlightName = "";
 			for (int i = 0; i < size; i++) {

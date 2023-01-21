@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import com.aventstack.extentreports.Status;
 import com.google.common.collect.Lists;
-import com.makemytrip.baseclass.BaseClass;
+import com.makemytrip.baseclass.MMTBaseClass;
 import com.makemytrip.pom.SelectFlightPage;
 import com.makemytrip.runner.RunWithChrome;
 import com.makemytrip.util.UtilFunctions;
@@ -20,7 +20,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class Lowest_Fastest_Selection_StepDefinition extends BaseClass {
+public class Lowest_Fastest_Selection_StepDefinition extends MMTBaseClass {
 
 	public static WebDriver driver = RunWithChrome.driver;
 	public static SelectFlightPage flightInfo = new SelectFlightPage(driver);

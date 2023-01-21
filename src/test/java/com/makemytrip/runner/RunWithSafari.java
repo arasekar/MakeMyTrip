@@ -5,14 +5,14 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-import com.makemytrip.baseclass.BaseClass;
+import com.makemytrip.baseclass.MMTBaseClass;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resource/com/makemytrip/feature/BookAFlight.feature", glue = "com\\makemytrip\\stepdefinition", monochrome = true, strict = true, dryRun = false)
 
-public class RunWithSafari extends BaseClass {
+public class RunWithSafari extends MMTBaseClass {
 	public static Properties prop;
 	public static WebDriver driver;
 
@@ -20,7 +20,7 @@ public class RunWithSafari extends BaseClass {
 	public static void setUp() throws Throwable {
 		prop = readPropertyFile();
 		String browser = prop.getProperty("browserName1");
-		driver = BaseClass.getBrowser(browser);
+		driver = MMTBaseClass.getBrowser(browser);
 		setExtentReport();
 	}
 

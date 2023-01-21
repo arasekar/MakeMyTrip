@@ -2,13 +2,13 @@ package com.makemytrip.stepdefinition;
 
 import java.io.IOException;
 
-import com.makemytrip.baseclass.BaseClass;
+import com.makemytrip.baseclass.MMTBaseClass;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-public class Hooks extends BaseClass {
+public class Hooks extends MMTBaseClass {
 	@Before
 	public void beforeHooks(Scenario scenario) {
 		String name = scenario.getName();

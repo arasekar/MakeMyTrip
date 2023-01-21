@@ -8,9 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.makemytrip.baseclass.BaseClass;
+import com.makemytrip.baseclass.MMTBaseClass;
 
-public class SelectFlightPage extends BaseClass {
+public class SelectFlightPage extends MMTBaseClass {
 	public static WebDriver driver;
 
 	@FindBy(xpath = "//*[@id='sorting-togglers']/div[3]/div/span/span[1]")

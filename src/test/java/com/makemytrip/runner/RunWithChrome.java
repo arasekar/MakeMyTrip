@@ -5,7 +5,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-import com.makemytrip.baseclass.BaseClass;
+import com.makemytrip.baseclass.MMTBaseClass;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
@@ -19,7 +19,7 @@ import cucumber.api.junit.Cucumber;
 				  dryRun = false
 )
 
-public class RunWithChrome extends BaseClass {
+public class RunWithChrome extends MMTBaseClass {
 	public static Properties prop;
 	public static WebDriver driver;
 
@@ -27,7 +27,7 @@ public class RunWithChrome extends BaseClass {
 	public static void setUp() throws Throwable {
 		prop=readPropertyFile();
 		String browser = prop.getProperty("browserName");
-		driver = BaseClass.getBrowser(browser);
+		driver = MMTBaseClass.getBrowser(browser);
 		setExtentReport();
 	}
 
